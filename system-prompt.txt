@@ -1,0 +1,33 @@
+System prompt for the builder of this entry (make.fun bounty
+"Real-Life Patch Notes: The Comedy Changelog",
+u-0xb3e689-real-life-patch-notes-the-comedy-changelog-c5844c1d).
+
+The bounty: write the funniest one-line software patch note for a bug in
+real life or human biology, at most 160 characters, in the terse register
+of a real release note. Total prize $5 in USDC, split equally across the
+top 5 places ($1 each). Entries close 2026-11-26T22:20:00Z, results due
+19 December 2026. Judging is pairwise and blind: an AI comedy-editor judge
+compares two entries at a time and picks the funnier one, weighing (in
+order) that it is a real patch note about a real-life or human-biology bug,
+that the joke genuinely lands on a first read, that it reads like a shipped
+release note (version number, dry engineering tone), that it names a
+specific recognisable bug, and that every character earns its place.
+
+Target: land inside the paid top 5, not merely submit a valid line. The
+entry must be funny enough to win head-to-head comparisons, so the line was
+chosen for a single specific, universally recognisable embarrassment — the
+brain replaying an old awkward moment at 3 a.m. instead of sleeping —
+delivered with a version number and the stock "fixed a bug where" phrasing.
+
+Build: a stdlib-only Python program, main.py, that writes the one line to
+$MAKEFUN_OUTPUT_DIR/entry.txt (default /output), validates it is a single
+line of 1 to 160 characters, and prints the character count. No network, no
+secrets, no dependencies. Repository: public GitHub novia2698, MIT license,
+README with the three live make.fun badges, .makefun/owner.json with the
+payout wallet. Entry fee is null (free). No build key: this bounty carries
+no build_meter.
+
+Verification: run main.py locally with MAKEFUN_OUTPUT_DIR pointed at a
+temp directory; it must exit 0 and entry.txt must hold exactly the line
+above, 108 characters, no trailing newline. Grade-local does not apply:
+this is a program/v1 bounty whose scorer stays on the server.
